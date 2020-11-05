@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/instructions.css">
     <style>
         div {
-            background-image: url('./graphics/formimg.jpg');
+            background-image: url('Graphics/formimg.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -22,7 +22,7 @@
             <li class="list" style="float: left;">
                 <a href="round-one.html">Round 1 Page</a>
             </li>
-            <li class="list" style="float:right;">
+            <li style="float:right;">
                 <button id="myBtn" class="button button1">Contact Us</button>
                 <div id="myModal" class="modal">
 
@@ -31,13 +31,64 @@
                         <span class="close">&times;</span>
                         <br>
                         <p>
-                            <p style="text-align: center; font-size: xx-large; color:  #a3044a;">Contact us</p>
+                            <p style="text-align: center; font-size: xx-large; color: orange; font-style: oblique;">Contact us</p>
                         </p>
                         <br>
-                        <p style="text-align: center; color: #1cdbc2;">Shaurya : <a>+91 87573 73564</a></p>
-                        <p style="text-align: center; color: #1cdbc2;">Anupriya : <a>+91 95701 64884</a></p>
-                        <p style="text-align: center; color: #1cdbc2;">Pranav : <a>+91 97030 03291</a></p>
-                        <p style="text-align: center; color: #1cdbc2;">Sparsh : <a>+91 94331 80822</a></p>
+                        <p style="text-align: center; color: red;">Shaurya :
+                            <p style="align-items: center; text-align: center;"><button id="p1" class="buttononclick" onclick="p1()">+91 87573 73564</button></p>
+                        </p>
+                        <p style="text-align: center; color:red;">Anupriya :
+                            <p style="align-items: center; text-align: center;"><button id="p2" class="buttononclick" onclick="p2()">+91 95701 64884</button></p>
+                        </p>
+                        <p style="text-align: center; color: red;">Pranav :
+                            <p style="align-items: center; text-align: center;"><button id="p3" class="buttononclick" onclick="p3()">+91 97030 03291</button></p>
+                        </p>
+                        <p style="text-align: center; color: red;">Sparsh :
+                            <p style="align-items: center; text-align: center;"><button id="p4" class="buttononclick" onclick="p4()">+91 94331 80822</button></p>
+                        </p>
+                        <br>
+                        <p style="font-size: small; color:grey; text-align: center;">(Click to copy to Clipboard)</p>
+                        <script>
+                            function p1() {
+                                var input = document.createElement('input');
+                                input.value = document.getElementById('p1').innerHTML;
+                                input.id = 'inputID';
+                                document.body.appendChild(input);
+                                input.select();
+                                document.execCommand('copy');
+                                document.body.removeChild(input);
+                            }
+
+                            function p2() {
+                                var input = document.createElement('input');
+                                input.value = document.getElementById('p2').innerHTML;
+                                input.id = 'inputID';
+                                document.body.appendChild(input);
+                                input.select();
+                                document.execCommand('copy');
+                                document.body.removeChild(input);
+                            }
+
+                            function p3() {
+                                var input = document.createElement('input');
+                                input.value = document.getElementById('p3').innerHTML;
+                                input.id = 'inputID';
+                                document.body.appendChild(input);
+                                input.select();
+                                document.execCommand('copy');
+                                document.body.removeChild(input);
+                            }
+
+                            function p4() {
+                                var input = document.createElement('input');
+                                input.value = document.getElementById('p4').innerHTML;
+                                input.id = 'inputID';
+                                document.body.appendChild(input);
+                                input.select();
+                                document.execCommand('copy');
+                                document.body.removeChild(input);
+                            }
+                        </script>
                     </div>
                     <script>
                         // Get the modal
@@ -84,19 +135,23 @@
         <br>
         <br>
     </div>
-    <div style="padding-left: 40px;">
-        <p><span style="color: rgb(239, 239, 239);">1)   Answer the sections in &quot;lowercase&quot; <strong>BRITISH SPELLED</strong> word/ single-spaced words ONLY in case of short answer type.&nbsp;</span></p>
-        <p><span style="color: rgb(239, 239, 239);">2)   Any abbreviations must be written in full form.</span></p>
-        <p><span style="color: rgb(239, 239, 239);">3)   For example, if the answer is color, answer it as: colour</span></p>
-        <p><span style="color: rgb(239, 239, 239);">4)   In case, if the answer needs multiple words, for example, Michael Scott, answer it as: michael scott.</span></p>
-        <p><span style="color: rgb(239, 239, 239);">5)   If your answer is in numeral values, for example, 78, answer it as: 78</span></p>
-        <p><span style="color: rgb(239, 239, 239);">6)   If the answer is LOL enter: laugh out loud</span></p>
-        <p><span style="color: rgb(239, 239, 239);">7)   Special characters are allowed.</span></p>
-        <p><span style="color: rgb(239, 239, 239);">8)   MCQ Questions will have multiple options out of which one of them is correct.</span></p>
-        <p><span style="color: rgb(239, 239, 239);">9)   There are 15 short tasks in this section.&nbsp;</span></p>
-        <p><span style="color: rgb(239, 239, 239);">10)   ST stands for Short task and this abbreviation is used to give a serial number to each task.</span></p>
-        <p><span style="color: rgb(239, 239, 239);">11)   Each question carries +2 points for the right answer and -1 points for the wrong answer.</span></p>
-        <p><span style="color: rgb(239, 239, 239);">12)   Stay calm and try to finish your tasks on time before you get ejected or killed by the imposter.</span></p>
+    <div style="padding-left: 30px; padding-right: 30px; background-color: black;">
+        <p><span style="color: rgb(239, 239, 239); font-size: xx-large;">     <strong>Read all instructions carefully.</strong></span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">1)   Answer the sections in &quot;lowercase&quot; <strong>BRITISH SPELLED</strong> word/ single-spaced words ONLY in case of short answer type.&nbsp;</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">2)   Any abbreviations must be written in full form.</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">3)   For example, if the answer is color, answer it as: colour</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">4)   In case, if the answer needs multiple words, for example, Michael Scott, answer it as: michael scott.</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">5)   If your answer is in numeral values, for example, 78, answer it as: 78</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">6)   If the answer is LOL enter: laugh out loud</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">7)   Special characters are allowed.</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">8)   MCQ Questions will have multiple options out of which one of them is correct.</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">9)   There are 10 each of short, long and common tasks.&nbsp;</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">10)  ST stands for Short task and this abbreviation is used to give a serial number to each task.</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">11)  Each short task is worth 2 points but has a negative 1 on incorrect answers</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">12)  Each long task is worth 3 points with no negative marking.</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">13)  Each common task is worth 4 points with no negative marking.</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">14) In case of a tie, the participant with least amount of time taken ranks higher.</span></p>
+        <p><span style="color: rgb(239, 239, 239); font-size: x-large;">15) Stay calm. Try to finish all tasks and save your crew.</span></p>
         <br>
         <br>
         <br>

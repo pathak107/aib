@@ -7,6 +7,18 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (max-width: 300px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (min-width: 500px) {
+    html {
+        font-size: 85%;
+    }
+}
+
 body {
     background-color: #000000;
     font-family: 'Segoe UI';
@@ -60,6 +72,7 @@ body {
     font-size: x-large;
     transition-duration: 0.4s;
     cursor: pointer;
+    height: 60px;
 }
 
 .button1 {
@@ -139,7 +152,14 @@ body {
     top: 1px;
     text-transform: uppercase;
     font-size: 57px;
-    letter-spacing: 26.8px;
+    letter-spacing: 24.8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .headings .acumen {
+        font-size: 40px;
+        text-align: center;
+    }
 }
 
 .headings .presents {
@@ -171,12 +191,34 @@ body {
     text-decoration: none;
 }
 
+.headings .infodate {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    opacity: 1;
+    font-size: 30px;
+}
+
+.headings .infoday {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    opacity: 1;
+    font-size: 15px;
+}
+
 @-webkit-keyframes glow {
     from {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e4e4e4, 0 0 20px #bdbdbd, 0 0 25px #9b9b9b, 0 0 30px #707070, 0 0 35px #616161;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e4e4e4, 0 0 20px #bdbdbd, 0 0 25px #9b9b9b, 0 0 30px #707070, 0 0 33px #616161;
     }
     to {
-        text-shadow: 0 0 10px#fff, 0 0 15px #e4e4e4, 0 0 20px #bdbdbd, 0 0 25px #9b9b9b, 0 0 30px#707070, 0 0 35px #616161, 0 0 40px #303030;
+        text-shadow: 0 0 7px#fff, 0 0 13px #e4e4e4, 0 0 17px #bdbdbd, 0 0 23px #9b9b9b, 0 0 27px#707070, 0 0 33px #616161, 0 0 35px #303030;
     }
 }
 

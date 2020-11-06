@@ -20,7 +20,7 @@
     <div class="navbar">
         <ul>
             <li style="float: left;">
-                <a href="instructions.html">Instructions</a>
+                <a href="instructionstwo.html">Instructions</a>
             </li>
             <li style="float:right;">
                 <button id="myBtn" class="button button1">Contact Us</button>
@@ -31,20 +31,25 @@
                         <span class="close">&times;</span>
                         <br>
                         <p>
-                            <p style="text-align: center; font-size: xx-large; color: orange; font-style: oblique;">Contact us</p>
+                        <p style="text-align: center; font-size: xx-large; color: orange; font-style: oblique;">Contact
+                            us</p>
                         </p>
                         <br>
                         <p style="text-align: center; color: red;">Shaurya :
-                            <p style="align-items: center; text-align: center;"><button id="p1" class="buttononclick" onclick="p1()">+91 87573 73564</button></p>
+                        <p style="align-items: center; text-align: center;"><button id="p1" class="buttononclick"
+                                onclick="p1()">+91 87573 73564</button></p>
                         </p>
                         <p style="text-align: center; color:red;">Anupriya :
-                            <p style="align-items: center; text-align: center;"><button id="p2" class="buttononclick" onclick="p2()">+91 95701 64884</button></p>
+                        <p style="align-items: center; text-align: center;"><button id="p2" class="buttononclick"
+                                onclick="p2()">+91 95701 64884</button></p>
                         </p>
                         <p style="text-align: center; color: red;">Pranav :
-                            <p style="align-items: center; text-align: center;"><button id="p3" class="buttononclick" onclick="p3()">+91 97030 03291</button></p>
+                        <p style="align-items: center; text-align: center;"><button id="p3" class="buttononclick"
+                                onclick="p3()">+91 97030 03291</button></p>
                         </p>
                         <p style="text-align: center; color: red;">Sparsh :
-                            <p style="align-items: center; text-align: center;"><button id="p4" class="buttononclick" onclick="p4()">+91 94331 80822</button></p>
+                        <p style="align-items: center; text-align: center;"><button id="p4" class="buttononclick"
+                                onclick="p4()">+91 94331 80822</button></p>
                         </p>
                         <br>
                         <p style="font-size: small; color:grey; text-align: center;">(Click to copy to Clipboard)</p>
@@ -101,17 +106,17 @@
                         var span = document.getElementsByClassName("close")[0];
 
                         // When the user clicks the button, open the modal 
-                        btn.onclick = function() {
+                        btn.onclick = function () {
                             modal.style.display = "block";
                         }
 
                         // When the user clicks on <span> (x), close the modal
-                        span.onclick = function() {
+                        span.onclick = function () {
                             modal.style.display = "none";
                         }
 
                         // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
+                        window.onclick = function (event) {
                             if (event.target == modal) {
                                 modal.style.display = "none";
                             }
@@ -134,22 +139,27 @@
 
     <div id="info " style="display: block; ">
         <div style="width: 100%; height: 800px; font-weight: 500;">
-            <p style="align-items: center; text-align: center; padding-top: 10%; font-size: xx-large;">Round 2 starts at 3pm on 7th November.</p>
+            <p style="align-items: center; text-align: center; padding-top: 10%; font-size: xx-large;">Round 2 starts at
+                3pm on 7th November.</p>
         </div>
     </div>
     <div id="infoend " style="display: block; ">
         <div style="width: 100%; height: 800px; font-weight: 500;">
-            <p style="align-items: center; text-align: center; padding-top: 10%; font-size: xx-large;">Round 2 has ended. PLease wait for the results to be released on Leaderboards.</p>
+            <p style="align-items: center; text-align: center; padding-top: 10%; font-size: xx-large;">Round 2 has
+                ended. PLease wait for the results to be released on Leaderboards.</p>
         </div>
     </div>
     <div id="eventend " style="display: block; ">
         <div style="width: 100%; height: 800px; font-weight: 500;">
-            <p style="align-items: center; text-align: center; padding-top: 10%; font-size: xx-large;">This event has ended. Thank You for participating in AIB by Acumen @ TechTatva 2020.</p>
-            <p style="align-items: center; text-align: center; padding-top: 10%; font-size: xx-large;">Winners have been annouced on the Leaderboard page.</p>
+            <p style="align-items: center; text-align: center; padding-top: 10%; font-size: xx-large;">This event has
+                ended. Thank You for participating in AIB by Acumen @ TechTatva 2020.</p>
+            <p style="align-items: center; text-align: center; padding-top: 10%; font-size: xx-large;">Winners have been
+                annouced on the Leaderboard page.</p>
         </div>
     </div>
     <div id="frames " class="iframes " style="align-items: center; display: none;">
-        <iframe id="frame1 " style="display: none; " src="https://test.gclocked.com/?form=-ML4U36S-mLXUNsrOZD8 " width="100% " height="800 " frameborder="0 " marginheight="0 " marginwidth="0 ">Loading…</iframe>
+        <iframe id="frame1 " style="display: none; " src="https://test.gclocked.com/?form=-MLTgHX-VkUKiF57l3S4 "
+            width="100% " height="800 " frameborder="0 " marginheight="0 " marginwidth="0 ">Loading…</iframe>
 
         <script>
             var d = new Date(); // for now
@@ -158,7 +168,7 @@
             //console.log(currentDay);
             if (currentDay == 7) {
                 var currentHour = d.getHours();
-                //console.log(currentHour);
+                console.log(currentHour);
                 if (currentHour == 15) {
                     console.log("in 13 ");
                     var x = document.getElementById("info ");
@@ -184,22 +194,22 @@
                     var x = document.getElementById("eventend ");
                     x.style.display = "none ";
 
-                } else if (currentDay == 8 || currentDay == 9 || currentDay == 10) {
+                } else {
                     var x = document.getElementById("info ");
-                    x.style.display = "none ";
+                    x.style.display = "block";
                     x = document.getElementById("frames ");
-                    x.style.display = "none ";
+                    x.style.display = "none";
                     x = document.getElementById("frame1 ");
-                    x.style.display = "none ";
+                    x.style.display = "none";
                     var x = document.getElementById("infoend ");
-                    x.style.display = "none ";
+                    x.style.display = "none";
                     var x = document.getElementById("eventend ");
-                    x.style.display = "block ";
-
+                    x.style.display = "none";
                 }
-            } else {
+            }
+            else if (currentDay == 8 || currentDay == 9 || currentDay == 10) {
                 var x = document.getElementById("info ");
-                x.style.display = "block ";
+                x.style.display = "none ";
                 x = document.getElementById("frames ");
                 x.style.display = "none ";
                 x = document.getElementById("frame1 ");
@@ -207,7 +217,19 @@
                 var x = document.getElementById("infoend ");
                 x.style.display = "none ";
                 var x = document.getElementById("eventend ");
-                x.style.display = "none ";
+                x.style.display = "block ";
+
+            } else {
+                var x = document.getElementById("info ");
+                x.style.display = "block";
+                x = document.getElementById("frames ");
+                x.style.display = "none";
+                x = document.getElementById("frame1 ");
+                x.style.display = "none";
+                var x = document.getElementById("infoend ");
+                x.style.display = "none";
+                var x = document.getElementById("eventend ");
+                x.style.display = "none";
             }
         </script>
     </div>
